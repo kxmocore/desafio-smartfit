@@ -1,5 +1,3 @@
-import { scheduled } from "rxjs"
-
 export interface Location {
     id: number,
     title: string,

@@ -4,7 +4,7 @@
     }">{{ card.opened ? 'Aberto' : 'Fechado' }}</span>
     <h2>{{ card.title }}</h2>
     <p [innerHTML]="card.content"></p>
-    <div class="divider"></div>
+    <div *ngIf="card.opened" class="divider"></div>
     <ul>
         <img *ngIf="card.mask" [src]="'/assets/images/png/' + card.mask + '-mask.png'"/>
         <img *ngIf="card.towel" [src]="'/assets/images/png/' + card.towel + '-towel.png'"/>

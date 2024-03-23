@@ -43,6 +43,13 @@
     height: 90px;
 }
 
+@media (min-width: 375px) {
+
+    .legend .legend-item .legend-images img {
+        height: 50px;
+    }
+}
+
 @media (min-width: 1220px) {
     .legend {
         flex-direction: row;
